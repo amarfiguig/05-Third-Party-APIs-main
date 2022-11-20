@@ -1,0 +1,84 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+h1 {
+  color: #00000078;
+  text-shadow: -8px 14px 9px #00000078;
+}
+
+textarea {
+  background:none;
+  border: none;
+  resize: none;
+  color: #000000;
+  padding: 10px;
+  text-decoration-color: #000000;
+  overflow: hidden;
+  display: block;
+}
+
+/* Changes the main header in the file */
+.jumbotron {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  animation: breath 7s linear infinite;
+  border-bottom: 30px solid #00000075;
+  background-image: url(https://cbs4indy.com/wp-content/uploads/sites/22/2022/08/GettyImages-1307098713.jpg?w=2560&h=1440&crop=1);
+}
+
+@keyframes breath {
+  0%   { background-size: 100% auto; }
+  50% { background-size: 150% auto; }
+  100% { background-size: 100% auto; }
+}
+
+
+/* Makes the text area to write wrapped */
+.description {
+  white-space: pre-wrap;
+  color: #000000;
+  white-space: normal;
+}
+
+/* Makes the created classes row from js */
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid rgb(231, 135, 135);
+  padding: 10px;
+  margin: 10px;
+}
+
+/* styling for the hour */
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  font-size: x-large;
+  text-align: center;
+}
+
+/* styling for the past hours */
+.past {
+  background-color: #d3d3d3;
+  color: rgb(15, 9, 9);
+}
+
+/*styling for the present hours  */
+.present {
+  background-color: #ff6961;
+  color: rgb(5, 3, 3);
+}
+
+/*styling for the future hours  */
+.future {
+  background-color: #77dd77;
+  color: rgb(15, 7, 7);
+}
