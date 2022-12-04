@@ -10,14 +10,20 @@ h1 {
 }
 
 textarea {
-  background:none;
+  background: none;
   border: none;
   resize: none;
   color: #000000;
-  padding: 10px;
   text-decoration-color: #000000;
   overflow: hidden;
   display: block;
+  padding: 15px;
+  width: 80%;
+  background: #d2c396b8;
+}
+
+button.saveButton {
+  background: #b3d7ff;
 }
 
 /* Changes the main header in the file */
@@ -30,7 +36,7 @@ textarea {
   border-radius: 0;
   animation: breath 7s linear infinite;
   border-bottom: 30px solid #00000075;
-  background-image: url(https://cbs4indy.com/wp-content/uploads/sites/22/2022/08/GettyImages-1307098713.jpg?w=2560&h=1440&crop=1);
+  background-image: url(file:///D:/My%20Document/Coding%20Boot/Coding/Study/05-Third-Party-APIs-main/Work-day-scheduler-main/assets/pic/calendar.jpg);
 }
 
 @keyframes breath {
@@ -58,11 +64,13 @@ textarea {
 
 /* styling for the hour */
 .hour {
-  background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
   font-size: x-large;
   text-align: center;
+  font-family: monospace;
+  background-color: #6c757d94;
+  padding: inherit;
 }
 
 /* styling for the past hours */
