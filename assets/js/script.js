@@ -25,6 +25,11 @@ function hourColumnRaw (){
 
 }
 
+function hourColumnRaw() {
+    currentDay();
+    setInterval(currentDay, 10000);
+};
+
 
 // The colors change according to the temporal variables between the dying, the past and the future
 
