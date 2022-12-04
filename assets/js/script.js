@@ -8,11 +8,21 @@ var diaryTime = {
 }
 
 
-function CalendarTime {
+function CalendarTime () {
     
-   var CalendarTime = ('.container');
+   var CalendarTime = $('.container');
    var currentDay = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
-   console.log(currentDay);
+   CalendarTime.text(currentDay);
+    $('#CalendarTime').text(CalendarTime);
+    
+   cansole.log(currentDay);
+}
+
+function hourColumnRaw (){
+    var hourcolumn = $('.container');
+    var hourcolumn =$('.hour-column');
+    var hourcolumnTime =$('.hour-column-time');
+
 }
 
 
@@ -20,8 +30,10 @@ function CalendarTime {
 
 
 function hours() {
-    Today();
-    setInterval(Today);
+    var dateToday = Today();
+    var now = dateToday.hour();
+    
+    setInterval(function() {
     
     var hour = $(element).attr("hour");
     
@@ -35,7 +47,7 @@ function hours() {
         
     }else if (hour > now) {
         $(this).next().addClass("future");
-    }
+    }}, 10000);
 };
 
 //Save buttum locale function
