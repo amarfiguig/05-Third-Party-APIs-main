@@ -11,10 +11,15 @@ var diaryTime = {
 function CalendarTime () {
     
    var CalendarTime = $('.container');
-   var currentDay = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
+   var currentDay = moment().format("dddd, MMMM , YYYY, HH:mm:ss");
    CalendarTime.text(currentDay);
     $('#CalendarTime').text(CalendarTime);
-    
+    CalendarTime = currentDay.getInstance()
+
+//String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss");
+//format(Calendar.getInstance();
+//getTime());
+
    cansole.log(currentDay);
 }
 
@@ -28,6 +33,7 @@ function hourColumnRaw (){
 function hourColumnRaw() {
     currentDay();
     setInterval(currentDay, 10000);
+
 };
 
 
