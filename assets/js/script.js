@@ -10,11 +10,11 @@ var diaryTime = {
 
 function CalendarTime () {
     
-   var CalendarTime = $('.container');
+   var CalendarTime = $('#CalendarTime');
    var currentDay = moment().format("dddd, MMMM , YYYY, HH:mm:ss");
    CalendarTime.text(currentDay);
     $('#CalendarTime').text(CalendarTime);
-    CalendarTime = currentDay.getInstance()
+    CalendarTime = currentDay.getInstance();
 
 //String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss");
 //format(Calendar.getInstance();
@@ -24,7 +24,7 @@ function CalendarTime () {
 }
 
 function hourColumnRaw (){
-    var hourcolumn = $('.container');
+    var hourcolumn = $('#container');
     var hourcolumn =$('.hour-column');
     var hourcolumnTime =$('.hour-column-time');
 
