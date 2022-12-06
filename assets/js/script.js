@@ -8,19 +8,19 @@ var diaryTime = {
 }
 
 
-function CalendarTime () {
+function renderTime() {
     
    var CalendarTime = $('#CalendarTime');
    var currentDay = moment().format("dddd, MMMM , YYYY, HH:mm:ss");
    CalendarTime.text(currentDay);
     $('#CalendarTime').text(CalendarTime);
-    CalendarTime = currentDay.getInstance();
 
+//CalendarTime = currentDay.getInstance();
 //String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss");
 //format(Calendar.getInstance();
 //getTime());
 
-   cansole.log(currentDay);
+   console.log(currentDay);
 }
 
 function hourColumnRaw (){
@@ -67,3 +67,5 @@ function hours() {
         var value = $(this).siblings().val();
         var time = $(this).parent().attr().split();
     });
+
+    renderTime()
