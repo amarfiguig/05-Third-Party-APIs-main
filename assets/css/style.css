@@ -36,7 +36,7 @@ textarea {
 
 textarea:hover {
   color: #000000;
-  background: hsla(48, 14%, 79%, 0.722);
+  background: hsl(0deg 0% 100% / 85%);
 }
 
 button.saveButton {
