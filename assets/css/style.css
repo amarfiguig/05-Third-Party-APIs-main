@@ -9,6 +9,18 @@ h1 {
   text-shadow: -8px 14px 9px #00000078;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: sans-serif;
+  color: #5f646a;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
 textarea {
   background: none;
   border: none;
@@ -19,7 +31,12 @@ textarea {
   display: block;
   padding: 15px;
   width: 80%;
-  background: #d2c396b8;
+  background: #dac074b8;
+}
+
+textarea:hover {
+  color: #000000;
+  background: hsla(48, 14%, 79%, 0.722);
 }
 
 button.saveButton {
@@ -28,7 +45,9 @@ button.saveButton {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
-  border-radius: 0.3rem;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-width: 0px;
 }
 
 button.saveButton:hover {
@@ -77,13 +96,14 @@ button.saveButton:hover {
 
 /* styling for the hour */
 .hour {
-  color: #000000;
-  border-top: 1px dashed #000000;
-  font-size: x-large;
-  text-align: center;
-  font-family: monospace;
-  background-color: #6c757d94;
-  padding: inherit;
+    color: #000000;
+    border-top: 1px dashed #000000;
+    font-size: x-large;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #6c757d94;
+    padding: inherit;
+    font-weight: 600;
 }
 
 /* styling for the past hours */
