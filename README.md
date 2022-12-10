@@ -40,6 +40,10 @@ The following animation demonstrates the application functionality:
 
 ![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
 
+## Link of the Work Day Scheduler
+
+<a href="https://amarfiguig.github.io/05-Third-Party-APIs-main/">Work Day Scheduler</a>
+
 
 ## About 
 
