@@ -13,7 +13,8 @@ function renderTime() {
    var CalendarTime = $('#CalendarTime');
    var currentDay = moment().format("dddd, MMMM , YYYY, HH:mm:ss");
    CalendarTime.text(currentDay);
-    $('#CalendarTime').text(CalendarTime);
+
+//$('#CalendarTime').text(CalendarTime);
 
 //CalendarTime = currentDay.getInstance();
 //String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss");
@@ -39,26 +40,28 @@ function hourColumnRaw() {
 
 // The colors change according to the temporal variables between the dying, the past and the future
 
-
 function hours() {
-    var dateToday = Today();
-    var now = dateToday.hour();
+
     
     setInterval(function() {
     
-    var hour = $(element).attr("hour");
-    
-    if (hour === now) {
-        $(this).next().addClass('present');
-        
-        
-    }else if (hour < now) {
-        $(this).next().addClass('past');
-        
-        
-    }else if (hour > now) {
-        $(this).next().addClass('future');
-    }}, 10000);
+      $('.row').each(function(index,element) {
+
+        var hourNow = moment().hour();
+        var hour = $(element).attr("hour-column");
+
+        if (hour === hourNow) {
+            $(this).next().addClass('present');
+
+        }else if (hour < hourNow) {
+            $(this).next().addClass('past');
+
+        }else if (hour > hourNow) {
+            $(this).next().addClass('future');
+        }
+
+      }) 
+   }, 10000);
 };
 
 //Save buttum locale function
@@ -68,4 +71,6 @@ function hours() {
         var time = $(this).parent().attr().split();
     });
 
-    renderTime()
+    renderTime();
+
+    hours();
