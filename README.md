@@ -10,7 +10,7 @@ You'll need to use the [Moment.js](https://momentjs.com/) library to work with d
 
 ## User Story
 
-In this challenge, a base of codes was created for the time variables between the hour and the day, and the future and past properties were integrated with the change of colors according to time
+In this challenge, a base of codes was created for the time variables between the hour and the day, and the future and past properties were integrated with the change of colors according to time.
 
 ```md
 AS AN employee with a busy schedule
