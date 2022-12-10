@@ -49,15 +49,15 @@ function hours() {
     var hour = $(element).attr("hour");
     
     if (hour === now) {
-        $(this).next().addClass("present");
+        $(this).next().addClass('present');
         
         
     }else if (hour < now) {
-        $(this).next().addClass("past");
+        $(this).next().addClass('past');
         
         
     }else if (hour > now) {
-        $(this).next().addClass("future");
+        $(this).next().addClass('future');
     }}, 10000);
 };
 
