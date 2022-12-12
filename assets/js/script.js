@@ -26,7 +26,7 @@ function renderTime() {
 
 function hourColumnRaw (){
     var hourcolumn = $('#container');
-    var hourcolumn =$('.data-hour');
+    var hourcolumn =$('.hour-column');
     var hourcolumnTime =$('.hour-column-time');
 
 }
