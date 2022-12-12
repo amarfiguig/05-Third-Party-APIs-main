@@ -48,7 +48,7 @@ function hours() {
       $('.row').each(function(index,element) {
 
         var hourNow = moment().hour();
-        var hour = $(element).attr("hour-column");
+        var hour = $(element).attr("data-hour");
 
         if (hour === hourNow) {
             $(this).next().addClass('present');
