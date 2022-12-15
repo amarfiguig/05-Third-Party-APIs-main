@@ -50,14 +50,14 @@ function hours() {
         var hourNow = moment().hour();
         var hour = $(element).attr("data-hour");
 
-        if (hour === hourNow) {
-            $(this).next().addClass('present');
+        if (hour == hourNow) {
+            $(this).addClass('present');
 
         }else if (hour < hourNow) {
-            $(this).next().addClass('past');
+            $(this).addClass('past');
 
         }else if (hour > hourNow) {
-            $(this).next().addClass('future');
+            $(this).addClass('future');
         }
 
       }) 
