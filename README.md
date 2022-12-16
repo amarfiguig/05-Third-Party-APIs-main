@@ -37,7 +37,7 @@ THEN the saved events persist
 ```
 
 Screen Capture:
-https://github.com/amarfiguig/05-Third-Party-APIs-main/blob/main/assets/pic/pss.jpg
+https://raw.githubusercontent.com/amarfiguig/05-Third-Party-APIs-main/main/assets/pic/pss.jpg
 
 
 ![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
