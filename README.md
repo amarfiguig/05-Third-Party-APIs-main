@@ -36,11 +36,9 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
-Screen Capture:
-https://raw.githubusercontent.com/amarfiguig/05-Third-Party-APIs-main/main/assets/pic/pss.jpg
+## Screen Capture:
 
-
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+![A user clicks on slots on the color-coded calendar and edits the events.](https://raw.githubusercontent.com/amarfiguig/05-Third-Party-APIs-main/main/assets/pic/pss.jpg)
 
 ## Link of the Work Day Scheduler
 
